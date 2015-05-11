@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SNMPC_Client" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SNMPC_Client" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SNMPC_Client" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="`pkg-config gtk+-2.0 --cflags`" />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config gtk+-2.0 --libs`" />
+			<Add option="-lpthread" />
+		</Linker>
+		<Unit filename="img/led_off.png" />
+		<Unit filename="img/led_on.png" />
+		<Unit filename="src/adddevice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/adddevice.h" />
+		<Unit filename="src/configuration.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/configuration.h" />
+		<Unit filename="src/defines.h" />
+		<Unit filename="src/deldevice.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/deldevice.h" />
+		<Unit filename="src/devices.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/devices.h" />
+		<Unit filename="src/gtkled.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/gtkled.h" />
+		<Unit filename="src/home.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/home.h" />
+		<Unit filename="src/includes.h" />
+		<Unit filename="src/informations.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/informations.h" />
+		<Unit filename="src/iosetup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/iosetup.h" />
+		<Unit filename="src/login.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/login.h" />
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/networksetup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/networksetup.h" />
+		<Unit filename="src/packets.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/packets.h" />
+		<Unit filename="src/profile.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/profile.h" />
+		<Unit filename="src/queue.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/queue.h" />
+		<Unit filename="src/schedule.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/schedule.h" />
+		<Unit filename="src/server.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/server.h" />
+		<Unit filename="src/sha1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/sha1.h" />
+		<Unit filename="src/snmpsetup.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/snmpsetup.h" />
+		<Unit filename="src/socket.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/socket.h" />
+		<Unit filename="src/structures.h" />
+		<Unit filename="src/tasks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/tasks.h" />
+		<Unit filename="src/utilities.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/utilities.h" />
+		<Unit filename="src/visualization.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/visualization.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
